@@ -1,17 +1,17 @@
 /* Styles for personal website */
 :root {
     /* Main Theme */
-    --main-bg-color: #c6c6c6;
-    --text-color: #c6c6c6;
+    --main-bg-color: #d7d7d7;
     /* Header Colors */
     --nav-bg-color: #0a5539;
     --link-color: #c6c6c6;
-    --link-hover-color: #1D3461;
+    --link-hover-color: #000000;
     --box-shadow-color: #000000;
 }
 
 body {
     background-color: var(--main-bg-color);
+    font-family: Tahoma;
 }
 
 .menu {
@@ -43,10 +43,59 @@ body {
 .menu-text:hover {
     color: var(--link-hover-color);
 }
+
 .profile {
     border-radius: 50%;
-    width: 40%;
+    height: 250px;
+    object-fit: cover; 
     border: 5px solid var(--nav-bg-color);
     box-shadow: 0 4px 6px var(--box-shadow-color);
+}
 
+.box {
+    display: flex;
+    align-items: center; 
+    width: 90%;
+    height: 200px;
+    background-color: #f0f0f0;
+    text-align: left;
+    margin: 50px auto 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px var(--box-shadow-color);
+}
+
+.intro-text {
+    flex: 1;
+    padding: 20px; 
+}
+
+.intro-text .int-link {
+    color: #009f35; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.intro-text .int-link:hover {
+    color: #000000; 
+    text-decoration: none; 
+}
+
+.intro-text .ext-link {
+    color: #009f35;
+    text-decoration: underline;
+    transition: color 0.3s ease; 
+}
+
+.intro-text .ext-link:hover {
+    color: #274432;
+    text-decoration: none; 
+}
+
+.container {
+    justify-content: center; 
+    align-items: center;
+}
+
+.title {
+    text-align: center;
 }
