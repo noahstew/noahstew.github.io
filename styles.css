@@ -14,6 +14,16 @@ body {
     font-family: Tahoma;
 }
 
+ul {
+    list-style-type: initial;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .menu {
     background-color: var(--nav-bg-color);
     padding: 10px;
@@ -35,7 +45,7 @@ body {
 
 .menu-text {
     text-decoration: none;
-    color: var(--link-color);
+    color: #F0F0F0;
     font-weight: bold;
     font-size: 16px;
 }
@@ -80,10 +90,63 @@ body {
     text-align: center;
 }
 
+.box {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 90%;
+    height: 100%;
+    background-color: #f0f0f0;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px var(--box-shadow-color);
+}
+
+.box-title {
+    text-align: left;
+    margin: 0; 
+    padding: 20px 0px 0px 20px;
+}
+
+.box-text {
+    text-align: left;
+    margin: 0; 
+    padding: 20px;
+}
+.box-subtitle {
+    text-align: left;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+.box-content {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.horizontal-line {
+    border: 1px solid black; 
+    
+    width: 96%;
+}
+
+.course {
+    padding-left: 20px;
+}
+
+.course-desc {
+    padding-left: 20px;
+    margin-top: 0px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width: 768px) {
     .box {
         flex-direction: column; 
-        align-items: center; 
+        align-items: left; 
         background-color: #f0f0f0;
         width: 90%;
         margin: 50px auto; 
@@ -115,7 +178,7 @@ body {
         box-shadow: 0 4px 6px var(--box-shadow-color);
     }
     
-    .box {
+    .profile-box {
         display: flex;
         align-items: center; 
         width: 90%;
