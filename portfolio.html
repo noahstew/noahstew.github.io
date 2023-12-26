@@ -13,18 +13,59 @@
 
     <nav class="menu">
         <ul class="menu-list">
-            <!-- Need to remove "".html" https://www.youtube.com/watch?v=dLbYIwrB1Hs -->
-            <li class="menu-elements"><a class="menu-text" href="index.html">Home</a></li>
-            <li class="menu-elements"><a class="menu-text" href="about.html">Bio</a></li>
-            <li class="menu-elements"><a class="menu-text" href="education.html">Education</a></li>
-            <li class="menu-elements"><a class="menu-text" href="portfolio.html">Portfolio</a></li>
+            <!-- Need to remove ".html" https://www.youtube.com/watch?v=dLbYIwrB1Hs -->
+            <li class="menu-elements"><a class="menu-text" href="/.index.">Home</a></li>
+            <li class="menu-elements"><a class="menu-text" href="/.about">Bio</a></li>
+            <li class="menu-elements"><a class="menu-text" href="/.education">Education</a></li>
+            <li class="menu-elements"><a class="menu-text" href="'.portfolio">Portfolio</a></li>
         </ul>
     </nav>
 
-    <h1>
+    <h1 class="title">
         Portfolio
     </h1>
-
+    <div class="port-box">
+        <h3 class="box-title">Personal Website</h3>
+        <i class="box-subtitle">HTML, CSS, GitHub Pages</i>
+        <p class="box-para">
+            Personal website consisting of 4 static pages built using HTML and styled with CSS featuring a menu bar,
+            external links to other websites, media query and a visually pleasing design and hosted on GitHub pages.
+        </p>
+        <p class="box-subtitle port-link"> <a href="https://github.com/noahstew/noahstew.github.io">GitHub</a>
+        </p>
+    </div>
+    <div class="port-box">
+        <h3 class="box-title">User Authentication Portal</h3>
+        <i class="box-subtitle">Dart, Flutter, Firebase</i>
+        <p class="box-para">
+            Interactive registration/login screen which users may switch between that a validates a user’s email and
+            password and then either adds them to the firebase database or checks if they are in the database and then
+            signs them into their account. </p>
+        <p class="box-subtitle port-link"> <a href="https://github.com/noahstew/authenticationTemplate">GitHub</a> | <a
+                href="https://www.instagram.com/noahstew.dev/p/CyH4tQau-90/?img_index=1">More Info</a> | <a
+                href="https://www.instagram.com/noahstew.dev/reel/CyH4zhFuyXx/">Demo</a>
+        </p>
+    </div>
+    <div class="port-box">
+        <h3 class="box-title">Flappy Bird Clone</h3>
+        <i class="box-subtitle">Unity, C#</i>
+        <p class="box-para">
+            Clone of Flappy Bird built in Unity using C# scripts which features different start/end screens, playing
+            animations, particles, sound effects, and a high score saving to the players computer.
+        </p>
+        <p class="box-subtitle port-link"> <a href="https://github.com/noahstew/FlappyBirdClone">GitHub</a>
+        </p>
+    </div>
+    <div class="port-box">
+        <h3 class="box-title">Pong</h3>
+        <i class="box-subtitle">Python, Pygame</i>
+        <p class="box-para">
+            Developed an engaging 2-player pong game with dynamic difficulty progression and real-time score display
+            featuring an infinite loop and randomness to combat predictability, excitement, and replay-ability.
+        </p>
+        <p class="box-subtitle port-link"> <a href="https://github.com/noahstew/PyPong">GitHub</a>
+        </p>
+    </div>
 </body>
 
 </html>

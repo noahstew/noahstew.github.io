@@ -84,6 +84,9 @@ a {
 .container {
     justify-content: center; 
     align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px var(--box-shadow-color);
 }
 
 .title {
@@ -124,6 +127,19 @@ a {
     margin-top: 10px;
 }
 
+.box-para {
+    text-align: left;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.port-link {
+    padding-bottom: 20px;
+    color: #009f35;
+    transition: color 0.3s ease; 
+}
+
 .horizontal-line {
     border: 1px solid black; 
     
@@ -143,11 +159,21 @@ a {
     text-decoration: underline;
 }
 
+.port-box {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 90%;
+    height: 100%;
+    background-color: #f0f0f0;
+    margin: 0px auto 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px var(--box-shadow-color);
+}
 @media only screen and (max-width: 768px) {
     .box {
         flex-direction: column; 
         align-items: left; 
-        background-color: #f0f0f0;
         width: 90%;
         margin: 50px auto; 
         border-radius: 15px;
@@ -183,7 +209,7 @@ a {
         align-items: center; 
         width: 90%;
         height: 200px;
-        background-color: #f0f0f0;
+        background-color: white; /* Set background color to white */
         text-align: left;
         margin: 50px auto 50px auto;
         border-radius: 120px 15px 15px 120px;
