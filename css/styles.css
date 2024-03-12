@@ -1,0 +1,81 @@
+@import "animations.css";
+
+:root {
+    --main-bg-color: #111111;
+
+    /*TODO: Glow vs Light Colours*/
+    --neon-pink: #FE019A;
+    --neon-pink-center: #FFB0DF;
+    --neon-yellow: #dfa802;
+    --neon-yellow-center: #fff780;
+    --neon-blue: #15F4EE;
+    --neon-green: #39FF14;
+    /*
+    --neon-orange: #FF5F1F;
+    --neon-red: #FF3131; */
+}
+
+
+.tilt-neon {
+  font-family: "Tilt Neon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
+
+body {
+    display: flexbox;
+    background-color: var(--main-bg-color);
+    /* TODO: Add neon font*/
+    font-family: 'tilt-neon', sans-serif;
+}
+
+/* Place holder */
+h1 {
+    color: white;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 4px;
+    border-color: var(--neon-pink-center);
+    box-shadow: 0px 0px 8px 2px var(--neon-pink);
+    animation: slide-from-top ease-in-out 1s;
+}
+
+
+.name-neon-text {
+    font-size: 3em;
+    margin: 0 0 0 0;
+    padding: 8px 0px 8px 20px;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-neon-text {
+    font-size: 2em;
+}
+
+.menu-neon-text:last-child {
+    padding: 0 20px;
+}
+
+
+
+
+
+footer {
+    color: green;
+}
