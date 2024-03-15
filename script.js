@@ -5,8 +5,6 @@ const neonYellow = "var(--neon-yellow)";
 const neonYellowCenter = "var(--neon-yellow-center)";
 const neonBlue = "var(--neon-blue)";
 const neonGreen = "var(--neon-green)";
-// const neonOrange = "var(--neon-orange)";
-// const neonRed = "var(--neon-red)";
 
 // Updating header color based on page selected
 function setPageState() {
@@ -14,7 +12,7 @@ function setPageState() {
 
     // TODO: Assign custom colors for each page
     if (currentPage == "/index.html") {
-        changeMenuColors(neonPink, neonPinkCenter, neonYellow, neonYellowCenter,"home")
+        changeMenuColors(neonPink, neonPinkCenter, neonYellow, neonYellowCenter, "home")
     } else if (currentPage == "/about.html") {
         changeMenuColors(neonPink, neonPinkCenter, neonYellow, neonYellowCenter, "about")
     } else if (currentPage == "/contact.html") {
@@ -29,26 +27,47 @@ function setPageState() {
 function changeMenuColors(selectedColor, selectedInside, secondaryColor, secondaryInside, page) {
     // Name colour
     const nameText = document.querySelector('.name-neon-text');
+    const bar = document.querySelectorAll('.bar');
     if (nameText.id == page) {
         nameText.style.color = selectedInside;
         nameText.style.textShadow = selectedColor + " 1px 0 8px";
+        bar.forEach(bar => {
+            bar.style.backgroundColor = secondaryInside;
+            bar.style.boxShadow = "0px 0px 8px 2px " + secondaryColor;
+        });
     } else {
         nameText.style.color = secondaryInside;
         nameText.style.textShadow = secondaryColor + " 1px 0 8px";
+        bar.forEach(bar => {
+            bar.style.backgroundColor = selectedInside;
+            bar.style.boxShadow = "0px 0px 8px 2px " + selectedColor;
+        });
     }
 
 
     // Select all elements with the class '.menu-neon-text'
-    const menuText = document.querySelectorAll('.menu-neon-text');
+    const menuText = document.querySelectorAll('.nav-link');
 
     // Loop through each element and apply styles
     menuText.forEach(menuText => {
         if (menuText.id == page) {
             menuText.style.color = selectedInside;
-            menuText.style.textShadow = `${selectedColor} 1px 0 12px`;
+            menuText.style.textShadow = selectedColor + " 1px 0 12px";
         } else {
             menuText.style.color = secondaryInside;
-            menuText.style.textShadow = `${secondaryColor} 1px 0 12px`;
+            menuText.style.textShadow = secondaryColor + " 1px 0 12px";
         }
     });
 }
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const nameNeonText = document.querySelector(".name-neon-text");
+const navBar = document.querySelector(".navbar");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    nameNeonText.classList.toggle("active");
+    navBar.classList.toggle("active");
+});
