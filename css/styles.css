@@ -7,16 +7,17 @@
 }
 
 :root {
-    --main-bg-color: #111111;
-    --footer-color: #222222;
+    --accent-color: #111111;
+    --main-color: #28051b;
 
     --neon-pink: #FE019A;
     --neon-pink-center: #FFB0DF;
-    --neon-yellow: #dfa802;
+    --neon-yellow: #bf8f00;
     --neon-yellow-center: #fff780;
-    --neon-blue: #00e3db;
-    --neon-blue-center: #5afdf8;
-    --neon-green: #39FF14;
+    --neon-blue: #009c97;
+    --neon-blue-center: #8afdf9;
+    --neon-green: #1da904;
+    --neon-green-center: #b9ffb7;
 
 }
 
@@ -33,8 +34,7 @@
 
 body {
     display: flexbox;
-    background-color: var(--main-bg-color);
-    /* TODO: Add neon font*/
+    background-color: var(--main-color);
     font-family: 'tilt-neon', sans-serif;
 }
 
@@ -45,6 +45,7 @@ h1 {
 
 
 .navbar {
+    background-color: var(--accent-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +57,7 @@ h1 {
     box-shadow: 0px 0px 8px 2px var(--neon-pink);
     transition: 0.7s;
     animation: slide-from-top ease-in-out 1s;
-    margin: 10px;
+    margin: 20px;
 }
 
 
@@ -130,7 +131,7 @@ h1 {
         top: 80px;
         gap: 0;
         flex-direction: column;
-        background-color: var(--main-bg-color);
+        background-color: var(--main-color);
         transition: 0.7s ease-in-out;
         left: 150%;
         right: -10px;
@@ -170,12 +171,7 @@ h1 {
         margin: 10px;
     }
 
-    .welcome-text {
-        font-size: 10px;
-        color: var(--neon-blue-center);
-        text-shadow: var(--neon-blue) 1px 0 8px;
-        animation: fade-in ease-in 1.5s;
-    }
+
 
     .home-div {
         display: grid;
@@ -195,6 +191,17 @@ h1 {
         justify-content: center;
         text-align: center;
         padding: 40px 0px;
+        animation: flicker 7s infinite ease-in;
+        animation-delay: 3s;
+    }
+
+    .welcome-text {
+        font-size: 4rem;
+        color: black;
+        color: var(--neon-pink-center);
+        text-shadow: var(--neon-pink) 0 0 15px;
+        animation: fade-in ease-in-out 1.5s;
+        margin: 20px;
     }
 
     .profile-photo {
@@ -210,6 +217,7 @@ h1 {
         background-image: url('profile.jpg');
         background-size: cover;
         background-position: center;
+        background: radial-gradient(circle at center, white 5%, var(--neon-pink-center) 35%, var(--neon-pink) 60%, var(--main-color) 70%);
     }
 
     .introduction {
@@ -225,17 +233,13 @@ h1 {
     }
 
     .profile-image {
-        margin-top: -80px;
         height: 100%;
         width: 100%;
+        border-radius: 55%;
+        transform: translateY(-5px);
     }
 
-    .welcome-text {
-        font-size: 5rem;
-        color: black;
-        text-shadow: var(--neon-pink) 0 0 30px;
-        animation: fade-in ease-in-out 1.5s;
-    }
+
 
     .greeting {
         margin-top: -80px;
@@ -253,20 +257,57 @@ h1 {
         font-size: 1.5rem;
         padding: -200px 0px 0px 20px;
     }
+
+    .headline {
+        font-size: 4rem;
+        color: var(--neon-pink-center);
+        text-shadow: var(--neon-pink) 0 0 10px;
+        animation: fade-in ease-in-out 1.5s;
+    }
+
+    .about-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .headline-div {
+        grid-area: 1 / 1 / 2 / 3;
+        /* border: 4px double var(--neon-yellow-center); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        animation: flicker 7s infinite ease-in;
+        animation-delay: 3s;
+    }
+
+    .passions {
+        grid-area: 2 / 1 / 3 / 2;
+        background-color: var(--accent-color);
+    }
+
+    .neon-block {
+        border-radius: 10px;
+        border-style: double;
+        border-width: 10px;
+        border-color: var(--neon-yellow-center);
+        box-shadow: 0px 0px 8px 2px var(--neon-yellow);
+        margin: 20px;
+    }
+
+    .interests {
+        grid-area: 3 / 1 / 4 / 2;
+        background-color: var(--accent-color);
+    }
 }
 
 @media(min-width: 768px) {
-    .welcome-text {
-        font-size: 4rem;
-        color: var(--neon-blue-center);
-        text-shadow: var(--neon-blue) 1px 0 8px;
-        animation: fade-in ease-in 1.5s;
-    }
-
     .home-div {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* Two equal columns */
         grid-template-rows: repeat(5, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
@@ -280,10 +321,20 @@ h1 {
         /* border: 4px double var(--neon-pink-center); */
         justify-content: center;
         text-align: center;
+        animation: flicker 7s infinite ease-in;
+        animation-delay: 3s;
+    }
+
+    .welcome-text {
+        font-size: 5rem;
+        color: black;
+        color: var(--neon-pink-center);
+        text-shadow: var(--neon-pink) 0 0 15px;
+        animation: fade-in ease-in-out 1.5s;
+        margin: 20px;
     }
 
     .profile-photo {
-
         grid-area: 3 / 1 / 6 / 3;
         margin: -40px 20px 20px 20px;
         /* border: 4px double var(--neon-green); */
@@ -296,6 +347,7 @@ h1 {
         display: block;
         justify-content: center;
         align-items: center;
+        background: radial-gradient(circle at center, white 5%, var(--neon-pink-center) 35%, var(--neon-pink) 60%, var(--main-color) 70%);
     }
 
 
@@ -314,13 +366,8 @@ h1 {
     .profile-image {
         height: 100%;
         width: 100%;
-    }
-
-    .welcome-text {
-        font-size: 5rem;
-        color: black;
-        text-shadow: var(--neon-pink) 0 0 30px;
-        animation: fade-in ease-in-out 1.5s;
+        border-radius: 55%;
+        transform: translateY(-3px);
     }
 
     .greeting {
@@ -337,23 +384,139 @@ h1 {
     .intro-text {
         font-size: 1.5rem;
     }
+
+    .about-div {
+        display: grid;
+        grid-template-columns: repeat(0, 1fr);
+        grid-template-rows: repeat(0, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .headline-div {
+        grid-area: 1 / 1 / 2 / 3;
+        /* border: 4px double var(--neon-yellow-center); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        animation: flicker 7s infinite ease-in;
+        animation-delay: 3s;
+    }
+
+    .passions {
+        grid-area: 2 / 1 / 3 / 2;
+        background-color: var(--accent-color);
+    }
+
+    .neon-block {
+        border-radius: 10px;
+        border-style: double;
+        border-width: 10px;
+        border-color: var(--neon-yellow-center);
+        box-shadow: 0px 0px 8px 2px var(--neon-yellow);
+        margin: 0 0px 40px 20px;
+
+    }
+
+    .neon-block:last-child {
+        margin-right: 20px;
+    }
+
+    .interests {
+        grid-area: 2 / 2 / 3 / 3;
+        background-color: var(--accent-color);
+    }
+
+    .headline {
+        font-size: 4.5rem;
+        color: black;
+        color: var(--neon-pink-center);
+        text-shadow: var(--neon-pink) 0 0 10px;
+        animation: fade-in ease-in-out 1.5s;
+    }
+
 }
 
-.welcome-text {
-    font-size: 5rem;
-    color: black;
-    text-shadow: var(--neon-pink) 0 0 30px;
-    animation: fade-in ease-in-out 1.5s;
+
+.home-content {
+    border-radius: 10px;
+    border-style: double;
+    border-width: 4px;
+    border-color: var(--neon-yellow-center);
+    box-shadow: 0px 0px 8px 2px var(--neon-yellow);
+    background-color: var(--accent-color);
 }
 
+.list-element {
+    font-size: 1.75rem;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+.list-element:first-child {
+    padding-top: none;
+}
+
+.list-element:last-child {
+    margin-bottom: 20px;
+}
+
+.list {
+    margin-left: 20px;
+}
+
+
+.from-left {
+    animation: slide-from-left ease-in-out 1.5s;
+}
+
+.from-right {
+    animation: slide-from-right ease-in-out 1.5s;
+}
+
+.small-heading {
+    font-size: 3rem;
+    text-align: center;
+    padding: 16px;
+}
+
+.green-text {
+    color: var(--neon-green-center);
+    text-shadow: var(--neon-green) 1px 0 6px;
+}
+
+.blue-text {
+    color: var(--neon-blue-center);
+    text-shadow: var(--neon-blue) 1px 0 8px;
+}
+
+.pink-text {
+    color: var(--neon-pink-center);
+    text-shadow: var(--neon-pink) 1px 0 8px;
+}
+
+.yellow-text {
+    color: var(--neon-yellow-center);
+    text-shadow: var(--neon-yellow) 1px 0 8px;
+}
 
 footer {
-    background-color: var(--footer-color);
-    color: white;
-    margin-top: 0px;
-    padding-bottom: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    animation: slide-from-bottom ease-in-out 1.5s;
+    background-color: var(--accent-color);
     border-top: double;
     border-width: 4px;
     border-color: var(--neon-pink-center);
     box-shadow: 0px 0px 8px 2px var(--neon-pink);
+}
+
+.footer-text {
+    font-size: 1.25rem;
 }
