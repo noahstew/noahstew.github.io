@@ -131,10 +131,11 @@ h1 {
         top: 80px;
         gap: 0;
         flex-direction: column;
-        background-color: var(--main-color);
+        background-color: var(--accent-color);
         transition: 0.7s ease-in-out;
         left: 150%;
         right: -10px;
+        z-index: 1;
         border-radius: 0px 0px 10px 10px;
         border: 4px double var(--neon-pink-center);
         box-shadow: 0px 0px 8px 2px var(--neon-pink);
@@ -263,6 +264,7 @@ h1 {
         color: var(--neon-pink-center);
         text-shadow: var(--neon-pink) 0 0 10px;
         animation: fade-in ease-in-out 1.5s;
+        text-align: center;
     }
 
     .about-div {
@@ -399,6 +401,7 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         margin: 20px;
         animation: flicker 7s infinite ease-in;
         animation-delay: 3s;
@@ -434,8 +437,8 @@ h1 {
         color: var(--neon-pink-center);
         text-shadow: var(--neon-pink) 0 0 10px;
         animation: fade-in ease-in-out 1.5s;
+        text-align: center;
     }
-
 }
 
 
@@ -464,6 +467,70 @@ h1 {
 
 .list {
     margin-left: 20px;
+}
+
+.contact-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.contact-headline {
+    grid-area: 1 / 1 / 2 / 2;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 6rem;
+    animation: flicker 7s infinite ease-in;
+    animation-delay: 3s;
+    padding-top: -16px;
+    /* border: 4px double var(--neon-green-center); */
+}
+
+.links {
+    grid-area: 2 / 1 / 3 / 2;
+    /* border: 4px double var(--neon-yellow-center); */
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+    animation: fade-in 1.5s ease-in;
+}
+
+.contact-link {
+    height: 234px;
+    width: 234px;
+    padding: 16px;
+}
+
+.icon {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    border: 16px double var(--neon-pink-center);
+    box-shadow: 0px 0px 18px 2px var(--neon-pink);
+    transition: 0.7s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1) translateY(-10px);
+    border: 16px double var(--neon-yellow-center);
+    box-shadow: 0px 0px 18px 2px var(--neon-yellow);
+}
+
+#linkedin{
+    padding: 16px;
+}
+
+#github{
+    padding: 16px;
 }
 
 
@@ -507,7 +574,8 @@ footer {
     align-items: center;
     bottom: 0;
     left: 0;
-    height: 100px;
+    margin-top: auto;
+    height: 150px;
     width: 100%;
     animation: slide-from-bottom ease-in-out 1.5s;
     background-color: var(--accent-color);
@@ -517,6 +585,14 @@ footer {
     box-shadow: 0px 0px 8px 2px var(--neon-pink);
 }
 
+.about-footer {
+    height: 200px;
+}
+
+.contact-footer {
+    height: 350px
+}
+
 .footer-text {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
