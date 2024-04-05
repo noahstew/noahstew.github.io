@@ -703,7 +703,7 @@ nav {
 .contact-div {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -734,8 +734,8 @@ nav {
 }
 
 .contact-link {
-    height: 234px;
-    width: 234px;
+    height: 250px;
+    width: 250px;
     padding: 16px;
 }
 
