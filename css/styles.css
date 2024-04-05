@@ -114,6 +114,8 @@ nav {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    background-color: var(--neon-yellow-center);
+    box-shadow: 0px 0px 8px 2px var(--neon-yellow);
 }
 
 @media(max-width: 768px) {
@@ -522,8 +524,6 @@ nav {
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
-        animation: flicker 7s infinite ease-in;
-        animation-delay: 3s;
     }
 
     .skills-headline {
@@ -532,6 +532,8 @@ nav {
         animation: fade-in ease-in-out 1.5s;
         margin-top: 20px;
         text-align: center;
+        animation: flicker 7s infinite ease-in;
+        animation-delay: 3s;
     }
 
     .language {
@@ -584,7 +586,7 @@ nav {
     .projects-div {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.25fr 1fr 1fr 1fr;
+        grid-template-rows: 0.25fr 1fr; /*1fr 1fr;*/
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         background-color: var(--main-color);
