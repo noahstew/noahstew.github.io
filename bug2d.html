@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Bug Zapper 2D</title>
+</head>
+<body onload="main()">
+    <canvas id="webgl" width="400", height="400">
+        WebGL is not supported on your browser
+    </canvas>
+    <div onload="displayGameState()">
+        <p id="game-state" ></p>
+    </div>
+
+    <h1>Game Information</h1>
+
+    <h4>How to Play:</h4>
+    <p>
+      The game grows bacteria (coloured circles) on the parameter of a dish (white circle). The goal of the player is to
+      eradicate them with poison before they reach the threshold where they get to big and are no longer able be killed
+      with poison. The player does this by clicking on them.
+    </p>
+    <h4>Winning conditions: </h4>
+    <p>
+      If there is 1 or less bacteria left when they reach reach the threshold, the player wins and are given a score
+      based on when they killed the bacteria. If there is more than 1 bacteria left when the bacteria reach the
+      threshold,
+      the player loses.
+    </p>
+    <h4>Scoring</h4>
+    <p>
+      The closer the bacteria get to the threshold, the more points you will be awarded when you kill it, rewarding
+      patience and risk.
+    </p>
+    <script src="bug2d.js"></script>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+
+</body>
+
+</html>

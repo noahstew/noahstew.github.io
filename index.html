@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, height=device-height ,initial-scale=1.0">
-    <title>Noah Stewart Dev | Home </title>
+    <title>Noah Stewart Dev </title>
 
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/text-editting.css">
@@ -18,24 +18,29 @@
 </head>
 
 <body onload="setPageState()">
-    <nav>
-        <div class="navbar tilt-neon" id="border">
-            <a href="./index.html" class="remove-styling">
-                <h3 class="name-neon-text" id="home">NOAH STEWART</h3>
-            </a>
-            <ul class="nav-menu">
-                <li><a class="nav-link remove-styling" href="./about.html" id="about">About</a></li>
-                <li><a class="nav-link remove-styling" href="./contact.html" id="contact">Contact</a></li>
-                <li><a class="nav-link remove-styling" href="./education.html" id="education">Education</a></li>
-                <li><a class="nav-link remove-styling" href="./projects.html" id="projects">Projects</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <header>
+        <nav>
+            <div class="navbar tilt-neon" id="border">
+                <a href="#landing" class="remove-styling">
+                    <h3 class="name-neon-text" id="home">NOAH STEWART</h3>
+                </a>
+                <ul class="nav-menu">
+                    <li><a class="nav-link remove-styling" href="#about-me" id="about">About</a></li>
+                    <li><a class="nav-link remove-styling" href="#my-skills" id="skills">Skills</a></li>
+                    <li><a class="nav-link remove-styling" href="#my-portfolio" id="projects">Projects</a></li>
+                    <li><a class="nav-link remove-styling" href="#contact-me" id="contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
+    <div class="placeholder-0" id="landing"></div>
+
     <div class="home-div tilt-neon">
         <div class="welcome-message">
             <h1 class="welcome-text">Welcome to my Stewdio</h1>
@@ -43,18 +48,190 @@
         <div class="profile-photo">
             <img class="profile-image" src="profile.PNG">
         </div>
-        <div class="introduction">
-            <p class="greeting intro-text yellow-text">Hello!</p> <p class="tilt-neon paragraph intro-text yellow-text">My name is Noah Stewart and I am a current student at the University of
-                British Columbia pursuing a
-                Bachelors of Science in Computer Science with a minor in Data Science. I have amassed quite a motivation
-                for the tech industry and look forward to advancing into a career in elevating our world through
-                technology. </p>
+        <div class="introduction neon-block">
+            <h1 class="greeting yellow-text">Hello! I'm <b class="pink-text">Noah</b></h1>
+            <p class="tilt-neon paragraph intro-text yellow-text">I am a <b class="blue-text">2nd year</b> student at
+                the <b class="blue-text">University of British Columbia</b> pursuing a Bachelors of Science in
+                <b class="green-text">Computer Science</b> with a minor in <b class="green-text">Data Science</b>
+            </p>
         </div>
     </div>
-    <footer>
-        <p class="tilt-neon pink-text footer-text">© Noah Stewart </p>
-    </footer>
-    <script src="script.js"></script>
+
+    <div class="placeholder-1" id="about-me"></div>
+
+    <div class="about-div tilt-neon">
+        <div class="headline-div">
+            <h1 class="headline yellow-text">Learn About Me</h1>
+        </div>
+        <div class="education">
+            <h1 class="discipline blue-text">Computer Science Coursework</h1>
+            <ul class="coursework blue-text">
+                <li>Computer Programming 1 & 2</li>
+                <li>|</li>
+                <li>Machine Architecture</li>
+                <li>|</li>
+                <li>Data Structures and Algorithms</li>
+                <li>|</li>
+                <li>Analysis of Algorithms</li>
+                <li>|</li>
+                <li>Computer Graphics</li>
+            </ul>
+            <h1 class="discipline green-text">Data Science Coursework</h1>
+            <ul class="coursework green-text">
+                <li>Making Predictions with Data</li>
+                <li>|</li>
+                <li>Intro to Data Analytics</li>
+                <li>|</li>
+                <li>Applied Regression Analysis</li>
+                <li>|</li>
+                <li>Applied Time Series and Forecasting</li>
+        </div>
+        <div class="passions neon-block from-left">
+            <h1 class="small-heading pink-text">Industry Passions</h1>
+            <ul class="yellow-text list">
+                <li class="list-element">Application Development</li>
+                <li class="list-element">Software Development</li>
+                <li class="list-element">Web Development</li>
+                <li class="list-element">Machine Learning</li>
+                <li class="list-element">Artificial Intelligence</li>
+                <li class="list-element">Predictive Modelling</li>
+            </ul>
+        </div>
+        <div class="interests neon-block from-right">
+            <h1 class="small-heading pink-text">Personal Interests</h1>
+            <ul class="yellow-text list">
+                <li class="list-element">Country Music</li>
+                <li class="list-element">Photography</li>
+                <li class="list-element">Survivor</li>
+                <li class="list-element">NHL</li>
+                <li class="list-element">Philosophy</li>
+                <li class="list-element">Gym</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="placeholder-2" id="my-skills"></div>
+
+    <div class="skills-div tilt-neon">
+        <h1 class="skills-headline pink-text">Technical Skills</h1>
+        <div class="skill-type language">
+            <h1 class=" yellow-text">Languages</h1>
+        </div>
+        <div class="language-skills yellow-text">
+            <ul class="neon-block skills">
+                <li>Java</li>
+                <li>Python</li>
+                <li>R</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Dart</li>
+            </ul>
+        </div>
+        <div class="frameworks-skills blue-text">
+            <ul class="neon-block-blue skills">
+                <li>JUnit5 (Java)</li>
+                <li>Pygame (Python)</li>
+                <li>WebGL (Javascript)</li>
+                <li>Flutter (Dart)</li>
+            </ul>
+        </div>
+        <div class="skill-type frameworks">
+            <h1 class="blue-text">Frameworks & Libraries</h1>
+        </div>
+        <div class="skill-type software">
+            <h1 class="green-text">Software</h1>
+        </div>
+        <div class="software-skills green-text">
+            <ul class="skills neon-block-green">
+                <li>Visual Studio Code</li>
+                <li>GitHub</li>
+                <li>Microsoft 365</li>
+                <li>Google Workspace</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="placeholder-1" id="my-portfolio"></div>
+
+
+
+    <div class="projects-div tilt-neon" id="my-portfolio">
+        <div class="headline-div">
+            <h1 class="headline yellow-text">Projects</h1>
+        </div>
+
+        <div class="proj-1 neon-block-pink">
+            <h1 class="project-name pink-text">Super Bug Zapper</h1>
+            <h2 class="tech-used yellow-text">Javascript | WebGL</h2>
+            <p class="project-desc pink-text">Javascript game in which bacteria is invading a planet, and the
+                player has to click on the bacteria to get rid of it. Created both 2D and 3D versions.</p>
+            <div class="info-buttons">
+                <a href="./bug2d.html" target="_blank"><button class="yellow-button">Try Me</button></a>
+                <a href="https://github.com/noahstew/COSC414-A2" target="_blank"><button
+                        class="yellow-button">GitHub</button></a>
+                <a href="./bug3d.html" target="_blank"><button class="yellow-button">Try Me</button></a>
+                <a href="https://github.com/noahstew/COSC414-A4" target="_blank"><button
+                        class="yellow-button">GitHub</button></a>
+            </div>
+            <div class="demo-imgs">
+                <img class="project-img" src="projects/2D.png">
+                <img class="project-img" src="projects/3D.png">
+            </div>
+        </div>
+
+        <div class="proj-2 neon-block-blue">
+            <h1 class="project-name blue-text">Project #2</h1>
+            <h2 class="tech-used yellow-text">Tech 1 | Tech 2 | Etc.</h2>
+            <p class="project-desc blue-text">Lorem Ipsum</p>
+        </div>
+
+        <div class="proj-3 neon-block-green">
+            <h1 class="project-name green-text">Project #3</h1>
+            <h2 class="tech-used yellow-text">Tech 1 | Tech 2 | Etc.</h2>
+            <p class="project-desc green-text">Lorem Ipsum</p>
+        </div>
+
+
+    </div>
+
+    <div class="placeholder-2" id="contact-me"></div>
+
+
+
+    <div class="contact-div tilt-neon" id="contact-me">
+        <div class="contact-headline">
+            <h1 class="headline">Let's Connect</h1>
+        </div>
+        <div class=" yellow-text">
+            <ul class="links">
+                <li class="contact-link">
+                    <a href="mailto: njstewart22@icloud.com">
+                        <img class="icon" id="email" src="icons/mail.png">
+                    </a>
+                </li>
+                <li class="contact-link">
+                    <a href="https://linkedin.com/in/ns-noah-stewart">
+                        <img class="icon" id="linkedin" src="icons/li.png">
+                    </a>
+                </li>
+                <li class="contact-link">
+                    <a href="https://github.com/noahstew">
+                        <img class="icon" id="github" src="icons/github.png">
+                    </a>
+                </li>
+                <li class="contact-link">
+                    <a href="https://instagram.com/noahstew.dev">
+                        <img class="icon" id="instagram" src="icons/insta.png">
+                    </a>
+                </li>
+        </div>
+        <footer>
+            <p class="tilt-neon pink-text footer-text">© Noah Stewart </p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
