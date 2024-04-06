@@ -64,17 +64,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
-
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth', // Smooth scrolling
-                block: 'start',     // Vertical alignment
-                inline: 'nearest',  // Horizontal alignment
-                // Custom cubic-bezier timing function for ease-in-out effect
-                timing: 'cubic-bezier(0.42, 0, 0.58, 1)'
-            });
-        }
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
 });
