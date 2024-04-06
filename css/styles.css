@@ -20,6 +20,7 @@
     --neon-green-center: #b9ffb7;
 
 }
+
 .tilt-neon {
     font-family: "Tilt Neon", sans-serif;
     font-optical-sizing: auto;
@@ -271,7 +272,6 @@ nav {
     }
 
     .headline {
-        padding-top: 60px;
         font-size: 4rem;
         color: var(--neon-pink-center);
         text-shadow: var(--neon-pink) 0 0 10px;
@@ -508,6 +508,14 @@ nav {
         padding-top: -16px;
         /* border: 4px double var(--neon-green-center); */
     }
+
+
+    .contact-link {
+        height: 150px;
+        width: 150px;
+        padding: 16px;
+    }
+
 }
 
 @media(min-width: 768px) {
@@ -836,6 +844,13 @@ nav {
         padding-top: -16px;
         /* border: 4px double var(--neon-green-center); */
     }
+
+
+    .contact-link {
+        height: 250px;
+        width: 250px;
+        padding: 16px;
+    }
 }
 
 
@@ -877,11 +892,6 @@ nav {
     animation: fade-in 1.5s ease-in;
 }
 
-.contact-link {
-    height: 250px;
-    width: 250px;
-    padding: 16px;
-}
 
 .icon {
     height: 100%;
