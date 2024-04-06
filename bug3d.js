@@ -166,7 +166,7 @@ function main3d() {
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
     // Displaying game state
-    displayGameState(bactSize, numOfBacteria);
+    displayGameState3d(bactSize, numOfBacteria);
 
     // Drawing bacteria
     var speed = 0.05;
@@ -437,7 +437,7 @@ function rotateVertex(vertex, angle1, angle2) {
   return [x, y, z];
 }
 
-function displayGameState(bactSize, numOfBacteria) {
+function displayGameState3d(bactSize, numOfBacteria) {
   if (bactSize < 24 && !gameEnded) { // If game is playing -> show score
     var scoreboard = "Score: " + score;
     document.getElementById("game-state").innerText = scoreboard;

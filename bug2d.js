@@ -67,7 +67,7 @@ function main2d() {
             draw(gl, numberOfVertices, numOfBacteria); // Drawing vertices
         }
         // Updating scoreboard
-        displayGameState(currentRadius, numOfBacteria);
+        displayGameState2d(currentRadius, numOfBacteria);
         // Request browser to call tick
         requestAnimationFrame(tick);
     }
@@ -231,7 +231,7 @@ function animate(gl, numberOfVertices, numOfBacteria, currentRadius) {
 }
 
 // Game Logic 
-function displayGameState(currentRadius, numOfBacteria) {
+function displayGameState2d(currentRadius, numOfBacteria) {
     if (currentRadius < 0.2 && !gameEnded) { // If game is playing -> show score
         var scoreboard = "Score: " + score;
         document.getElementById("game-state").innerText = scoreboard;
@@ -268,7 +268,7 @@ function click(ev, canvas, currentRadius, numOfBacteria, bacteriaData) {
             var scoreCalculation = Math.round((1 + currentRadius * 5) * 100); // Score calculated dynamically by based on current radius rewarding player for letting bacteria grow bigger
             score += scoreCalculation; // Adding to score
             if (numOfBacteria == 0) { // End game if no bacteria left
-                displayGameState(currentRadius, numOfBacteria); // Update game state
+                displayGameState2d(currentRadius, numOfBacteria); // Update game state
                 gameEnded = true; // Set gameEnded to stop game
             }
         }
