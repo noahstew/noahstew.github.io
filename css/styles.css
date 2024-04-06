@@ -9,7 +9,6 @@
 :root {
     --main-color: #111111;
     --accent-purple: #28051b;
-    --accent-yellow: #312d00;
 
     --neon-pink: #FE019A;
     --neon-pink-center: #FFB0DF;
@@ -21,13 +20,6 @@
     --neon-green-center: #b9ffb7;
 
 }
-
-.background{
-    top: -100px;
-    bottom: 0px;
-    background-color: var(--main-color);
-}
-
 .tilt-neon {
     font-family: "Tilt Neon", sans-serif;
     font-optical-sizing: auto;
@@ -66,7 +58,7 @@ nav {
     width: 100%;
     top: 0;
     z-index: 2;
-    background: linear-gradient(var(--main-color) 30%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(var(--accent-purple) 5%, rgba(0, 0, 0, 0) 100%);
 }
 
 
