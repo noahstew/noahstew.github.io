@@ -544,7 +544,7 @@ nav {
     }
 
     .welcome-text {
-        font-size: 5rem;
+        font-size: 6rem;
         color: black;
         color: var(--neon-pink-center);
         text-shadow: var(--neon-pink) 0 0 15px;
