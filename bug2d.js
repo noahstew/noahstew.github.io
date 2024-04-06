@@ -22,7 +22,7 @@ var bacteriaData = []; // Stores the bacteria which are created
 var gameEnded = false; // Check if game is ended
 var score = 0; // Players score
 
-function main() {
+function main2d() {
     // Retrieving <canvas> element
     var canvas = document.getElementById("webgl");
     // Getting render context for WebGL

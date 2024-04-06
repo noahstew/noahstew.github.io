@@ -59,7 +59,7 @@ for (var i = 0; i < numOfBacteria; i++) {
   colorsArray = colorsArray.filter(e => e !== randomColor);
 }
 
-function main() {
+function main3d() {
   // Retrieving <canvas> element
   var canvas = document.getElementById('webgl');
 
