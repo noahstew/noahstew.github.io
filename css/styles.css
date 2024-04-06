@@ -22,6 +22,11 @@
 
 }
 
+.background{
+    top: -100px;
+    background-color: var(--main-color);
+    height: 100px;
+}
 
 .tilt-neon {
     font-family: "Tilt Neon", sans-serif;
@@ -37,11 +42,6 @@ body {
     display: flexbox;
     background-color: var(--accent-purple);
     font-family: 'tilt-neon', sans-serif;
-}
-
-/* Place holder */
-h1 {
-    color: white;
 }
 
 
