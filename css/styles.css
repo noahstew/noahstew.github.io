@@ -24,8 +24,8 @@
 
 .background{
     top: -100px;
+    bottom: 0px;
     background-color: var(--main-color);
-    height: 100px;
 }
 
 .tilt-neon {
