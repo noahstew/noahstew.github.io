@@ -413,7 +413,8 @@ nav {
     }
 
     .skill-type {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+        margin: 20px;
         place-content: center;
         animation: slide-from-left ease-in-out 1.5s;
     }
@@ -1009,6 +1010,7 @@ footer {
 
 .footer-text {
     font-size: 1.5rem;
+    margin: 20px;
 }
 
 .placeholder {
