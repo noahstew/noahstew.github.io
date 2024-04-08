@@ -132,7 +132,7 @@ nav {
     .nav-menu {
         position: fixed;
         right: -200%;
-        top: 80px;
+        top: 67px;
         gap: 0;
         flex-direction: column;
         background-color: var(--main-color);
