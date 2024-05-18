@@ -48,14 +48,14 @@ $('#github').hover(function () {
     });
 });
 
-$('#instagram').hover(function () {
+$('#tiktok').hover(function () {
     $(this).fadeOut(0, function () {
-        $(this).attr('src', 'icons/insta_yellow.png');
+        $(this).attr('src', 'icons/tiktok_yellow.png');
         $(this).fadeIn(500);
     });
 }, function () {
     $(this).fadeOut(0, function () {
-        $(this).attr('src', 'icons/insta.png');
+        $(this).attr('src', 'icons/tiktok.png');
         $(this).fadeIn(500);
     });
 });
