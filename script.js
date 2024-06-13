@@ -60,6 +60,28 @@ $('#tiktok').hover(function () {
     });
 });
 
+$('#resume').hover(function () {
+    $(this).fadeOut(0, function () {
+        $(this).attr('src', 'icons/resume_yellow.png');
+        $(this).fadeIn(500);
+    });
+}, function () {
+    $(this).fadeOut(0, function () {
+        $(this).attr('src', 'icons/resume.png');
+        $(this).fadeIn(500);
+    });
+});
+
+document.getElementById('resume').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = 'docs/resume.pdf';
+    link.download = 'NoahStewartResume.pdf'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
