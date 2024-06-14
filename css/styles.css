@@ -479,7 +479,7 @@ nav {
         align-items: center;
     }
 
-    .project-img {
+    .project-img-1 {
         height: 250px;
         width: 250px;
         border-radius: 10px;
@@ -488,6 +488,25 @@ nav {
         align-self: center;
         margin: 20px;
         place-self: center;
+    }
+
+    .project-img-2 {
+        padding: 16px;
+        width: 90%;
+        border-radius: 10px;
+        border: 8px double var(--neon-yellow-center);
+        box-shadow: 0px 0px 8px 2px var(--neon-yellow);
+        align-self: center;
+        margin: 20px;
+        place-self: center;
+    }
+
+    .demo-imgs-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
     }
 
     .contact-div {
@@ -776,7 +795,7 @@ nav {
         padding: 32px;
     }
 
-    .project-img {
+    .project-img-1 {
         height: 350px;
         width: 350px;
         border-radius: 10px;
@@ -792,6 +811,24 @@ nav {
         align-items: center;
         gap: 20px;
     }
+
+    .project-img-2 {
+        width: 45%;
+        border-radius: 10px;
+        border: 8px double var(--neon-yellow-center);
+        box-shadow: 0px 0px 8px 2px var(--neon-yellow);
+        align-self: center;
+        margin: 20px;
+        place-self: center;
+    }
+
+    .demo-imgs-2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+
 
     .info-buttons {
         display: flex;
