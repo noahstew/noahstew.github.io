@@ -1,0 +1,104 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Playwrite AU VIC', Tahoma;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffcaca;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7f7f;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+}
+
+img {
+    width: 30%;
+
+    padding: 10px;
+}
+
+.far{
+    align-self: flex-end;
+}
+
+.title{
+    text-align: center;
+    font-size: 3em;
+    padding-top: 35%;
+    padding-bottom: 30%;
+
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffcaca;
+    padding-bottom: 30%;
+}
+
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+#update-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffcaca;
+    padding: 0px 60px 60px 60px
+}
+
+#update-msg {
+    padding-top: 30px;
+    align-self: center;
+}
+
+
+#counter div {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+
+.bottom {
+    padding-bottom: 60px;
+}
+
+.chunk {
+    padding-bottom: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
