@@ -50,11 +50,11 @@
             <img class="profile-image" src="profile.PNG" alt="Profile Image">
         </div>
         <div class="introduction neon-block">
-            <h1 class="greeting yellow-text">Hello! I'm <b class="pink-text">Noah</b></h1>
-            <p class="tilt-neon paragraph intro-text yellow-text">I am entering my <b class="blue-text">3rd year</b> as a student at
+            <h2 class="greeting yellow-text">Hello! I'm <b class="pink-text">Noah</b></h2>
+            <p class="tilt-neon paragraph intro-text yellow-text">I am a <b class="blue-text">3rd year</b> as a student at
                 the <b class="blue-text">University of British Columbia</b> pursuing a Bachelors of Science in
                 <b class="green-text">Computer Science</b> with a minor in <b class="green-text">Data Science</b>
-            </p>
+            </p> 
         </div>
     </div>
 
@@ -62,10 +62,10 @@
 
     <div class="about-div tilt-neon">
         <div class="headline-div">
-            <h1 class="headline yellow-text">Learn About Me</h1>
+            <h2 class="headline yellow-text">Learn About Me</h2>
         </div>
         <div class="education">
-            <h1 class="discipline blue-text">Computer Science Coursework</h1>
+            <h3 class="discipline blue-text">Computer Science Coursework</h3>
             <ul class="coursework blue-text">
                 <li>Computer Programming 1 & 2</li>
                 <li id="only-desktop">|</li>
@@ -89,7 +89,7 @@
                 <li id="only-desktop">|</li>
                 <li>*Database System Implementation</li>
             </ul>
-            <h1 class="discipline green-text">Data Science Coursework</h1>
+            <h3 class="discipline green-text">Data Science Coursework</h3>
             <ul class="coursework green-text">
                 <li>Making Predictions with Data</li>
                 <li id="only-desktop">|</li>
@@ -103,21 +103,21 @@
                 <li id="only-desktop">|</li>
                 <li>*Stochastic Modelling & Simulation</li>
             </ul>
-            <h2 class="yellow-text asterisk">*Upcoming 2024-2025 Winter Session</h2>
+            <h3 class="yellow-text asterisk">*Upcoming 2024-2025 Winter Session</h2>
         </div>
         <div class="passions neon-block from-left">
-            <h1 class="small-heading pink-text">Industry Passions</h1>
+            <h3 class="small-heading pink-text">Industry Passions</h3>
             <ul class="yellow-text list">
-                <li class="list-element">Application Development</li>
-                <li class="list-element">Software Development</li>
+                <li class="list-element">Mobile Development</li>
                 <li class="list-element">Web Development</li>
+                <li class="list-element">Application Development</li>
                 <li class="list-element">Machine Learning</li>
                 <li class="list-element">Artificial Intelligence</li>
                 <li class="list-element">Predictive Modelling</li>
             </ul>
         </div>
         <div class="interests neon-block from-right">
-            <h1 class="small-heading pink-text">Personal Interests</h1>
+            <h3 class="small-heading pink-text">Personal Interests</h3>
             <ul class="yellow-text list">
                 <li class="list-element">Music</li>
                 <li class="list-element">Photography</li>
@@ -133,10 +133,10 @@
 
     <div class="skills-div tilt-neon">
         <div class="headline-div">
-            <h1 class="headline pink-text">Technical Skills</h1>
+            <h2 class="headline pink-text">Technical Skills</h2>
         </div>
         <div class="skill-type language">
-            <h1 class="yellow-text">Languages</h1>
+            <h3 class="yellow-text">Languages</h3>
         </div>
         <div class="language-skills yellow-text">
             <ul class="neon-block skills">
@@ -147,22 +147,29 @@
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
+                <li>EJS</li>
                 <li>Dart</li>
             </ul>
         </div>
         <div class="skill-type frameworks">
-            <h1 class="blue-text">Frameworks & Libraries</h1>
+            <h3 class="blue-text">Frameworks & Libraries</h3>
         </div>
         <div class="frameworks-skills blue-text">
             <ul class="neon-block-blue skills">
-                <li>JUnit5 (Java)</li>
-                <li>Pygame (Python)</li>
-                <li>WebGL (Javascript)</li>
-                <li>Flutter (Dart)</li>
+                <li>JUnit5</li>
+                <li>Pygame</li>
+                <li>Flutter</li>
+                <li>Bootstrap</li>
+                <li>JQuery</li>
+                <li>NodeJS</li>
+                <li>ExpressJS</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>Git</li>
             </ul>
         </div>
         <div class="skill-type software">
-            <h1 class="green-text">Software</h1>
+            <h3 class="green-text">Software & Tools</h3>
         </div>
         <div class="software-skills green-text">
             <ul class="skills neon-block-green">
@@ -178,12 +185,41 @@
 
     <div class="projects-div tilt-neon" id="my-portfolio">
         <div class="headline-div">
-            <h1 class="headline yellow-text">Projects</h1>
+            <h2 class="headline yellow-text">Projects</h2>
         </div>
 
-        <div class="proj-1 neon-block-pink">
-            <h1 class="project-name pink-text">Super Bug Zapper</h1>
-            <h2 class="tech-used yellow-text">Javascript | WebGL</h2>
+        <div class="proj-1 neon-block-blue">
+            <h3 class="project-name blue-text">Side Questor Mobile App</h2>
+            <h4 class="tech-used yellow-text">Dart | Flutter | HiveDB</h3>
+            <p class="project-desc blue-text">Original full stack android/iOS application which gamify's a Todo List
+                with dynamic progress bars. Users can manage their categories by creating them by typing a name, picking from a list
+                of icons and colors or delete by swiping on them on the delete screen. They can then add their quests to
+                these custom categories, track, and manage their quests on the home screen. </p>
+
+            <p class="yellow-text" id="only-mobile">*** Links to 
+                <!-- demo video and -->
+                GitHub repository available on
+                fullscreen desktop</p>
+
+            <div class="info-buttons" id="only-desktop">
+                <!-- TODO: Make demo video -->
+                <!-- <a href="bug3d.html" target="_blank"><button class="yellow-button">Demo</button></a> -->
+                <a href="https://github.com/noahstew/quest_manager_app" target="_blank"><button
+                        class="yellow-button">GitHub</button></a>
+            </div>
+
+            <div class="demo-imgs-2">
+                <img class="project-img-2" src="project_media/1.jpg">
+                <img class="project-img-2" src="project_media/2.jpg">
+            </div>
+
+
+
+        </div>
+
+        <div class="proj-2 neon-block-pink">
+            <h3 class="project-name pink-text">Super Bug Zapper</h3>
+            <h4 class="tech-used yellow-text">Javascript | WebGL</h4>
             <p class="project-desc pink-text">Javascript game built by utilizing the shaders in WebGL in which bacteria
                 is invading a planet, and the player has to click on the bacteria to get rid of it. Created both 2D and
                 3D versions in my Computer Graphics class at the University of British Columbia.</p>
@@ -203,36 +239,6 @@
                 <img class="project-img-1" src="projects/2D.png">
                 <img class="project-img-1" src="projects/3D.png">
             </div>
-        </div>
-
-        <div class="proj-2 neon-block-blue">
-            <h1 class="project-name blue-text">Side Questor Mobile App</h1>
-            <h2 class="tech-used yellow-text">Dart | Flutter | HiveDB</h2>
-            <p class="project-desc blue-text">Original full stack android/iOS application which gamify's a Todo List
-                with dynamic
-                progress bars. Users can manage their categories by creating them by typing a name, picking from a list
-                of icons and colors or delete by swiping on them on the delete screen. They can then add their quests to
-                these custom categories, track, and manage their quests on the home screen. </p>
-
-            <p class="yellow-text" id="only-mobile">*** Links to 
-                <!-- demo video and  -->
-                GitHub repository available on
-                fullscreen desktop</p>
-
-            <div class="info-buttons" id="only-desktop">
-                <!-- TODO: Make demo video -->
-                <!-- <a href="bug3d.html" target="_blank"><button class="yellow-button">Demo</button></a> -->
-                <a href="https://github.com/noahstew/quest_manager_app" target="_blank"><button
-                        class="yellow-button">GitHub</button></a>
-            </div>
-
-            <div class="demo-imgs-2">
-                <img class="project-img-2" src="project_media/1.jpg">
-                <img class="project-img-2" src="project_media/2.jpg">
-            </div>
-
-
-
         </div>
 
         <!-- <div class="proj-3 neon-block-green">

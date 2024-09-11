@@ -15,60 +15,48 @@ hamburger.addEventListener("click", () => {
 $('#email').hover(function () {
     $(this).fadeOut(0, function () {
         $(this).attr('src', 'icons/mail_yellow.png');
-        $(this).fadeIn(500);
+        $(this).fadeIn(250);
     });
 }, function () {
     $(this).fadeOut(0, function () {
         $(this).attr('src', 'icons/mail.png');
-        $(this).fadeIn(500);
+        $(this).fadeIn(200);
     });
 });
 
 $('#linkedin').hover(function () {
     $(this).fadeOut(0, function () {
         $(this).attr('src', 'icons/li_yellow.png');
-        $(this).fadeIn(500);
+        $(this).fadeIn(250);
     });
 }, function () {
     $(this).fadeOut(0, function () {
         $(this).attr('src', 'icons/li.png');
-        $(this).fadeIn(500);
+        $(this).fadeIn(200);
     });
 });
 
 $('#github').hover(function () {
     $(this).fadeOut(0, function () {
         $(this).attr('src', 'icons/github_yellow.png');
-        $(this).fadeIn(500);
+        $(this).fadeIn(250);
     });
 }, function () {
     $(this).fadeOut(0, function () {
         $(this).attr('src', 'icons/github.png');
-        $(this).fadeIn(500);
-    });
-});
-
-$('#tiktok').hover(function () {
-    $(this).fadeOut(0, function () {
-        $(this).attr('src', 'icons/tiktok_yellow.png');
-        $(this).fadeIn(500);
-    });
-}, function () {
-    $(this).fadeOut(0, function () {
-        $(this).attr('src', 'icons/tiktok.png');
-        $(this).fadeIn(500);
+        $(this).fadeIn(200);
     });
 });
 
 $('#resume').hover(function () {
     $(this).fadeOut(0, function () {
         $(this).attr('src', 'icons/resume_yellow.png');
-        $(this).fadeIn(500);
+        $(this).fadeIn(250);
     });
 }, function () {
     $(this).fadeOut(0, function () {
         $(this).attr('src', 'icons/resume.png');
-        $(this).fadeIn(500);
+        $(this).fadeIn(200);
     });
 });
 
@@ -85,7 +73,6 @@ document.getElementById('resume').addEventListener('click', function() {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
